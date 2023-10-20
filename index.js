@@ -42,9 +42,9 @@ function checkGameOver() {
         if((gameGrid[position[0]] !==  "" || gameGrid[position[1]] !== "" || gameGrid[position[2]] !== "")
          &&(gameGrid[position[0]] === gameGrid[position[1]]) && (gameGrid[position[1]] === gameGrid[position[2]])){
             if (gameGrid[position[0] == "x"])
-            answer = "x";
+            answer = "o";
         else
-        answer = "o";
+        answer = "x";
 
         boxes.forEach((box)=>{
             box.style.pointerEvents = "none";
